@@ -16,7 +16,7 @@
               <a
                 target="_blank"
                 class="link"
-                href="https://www.facebook.com/RozoerGaming/"
+                href="https://www.facebook.com/rlordz12/"
                 data-tippy-content="@facebook_handle"
                 ><svg
                   class="h-6 fill-current text-gray-600 hover:text-teal-700"
@@ -127,5 +127,12 @@
 <script>
 export default {
   transition: "slide-bottom",
+  data() {
+    return {
+      contacts : [
+
+      ]
+    }
+  }
 };
 </script>

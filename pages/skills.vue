@@ -12,7 +12,7 @@
               <div class="card-item mx-auto max-w-sm text-center">
                 <i class="colored" :class="s.icon" style="font-size: 15rem"></i>
                 <div class="px-1 py-4 text-center">
-                  <h5 class="font-semibold text-xl text-indigo-600">
+                  <h5 class="font-semibold text-xl text-gray-300">
                     {{ s.name }}
                   </h5>
                   <p class="text-gray-600">
@@ -63,7 +63,7 @@ export default {
         {
           name: 'VueJS',
           icon: 'devicon-vuejs-plain',
-          experience: "7 months"
+          experience: "1 years"
 
         }
         ,

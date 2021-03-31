@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <h1 class="text-center text-6xl py-20">Coming soon !!</h1>
+      <h1 class="text-center text-4xl py-20">Coming soon !!</h1>
     </section>
   </div>
 </template>

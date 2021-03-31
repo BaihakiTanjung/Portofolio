@@ -19,7 +19,7 @@
                   <div class="card-hover"></div>
                 </div>
                 <div class="px-1 py-4">
-                  <h5 class="font-semibold text-xl text-indigo-600">
+                  <h5 class="font-semibold text-xl text-gray-300">
                     {{ p.name }}
                   </h5>
                   <p class="text-gray-600">
@@ -49,7 +49,18 @@ export default {
     return {
       projects:
         [
-
+           {
+            name : "Sitama Admin",
+            desc : "Pengelolaan data semua bisnis",
+            picture : "sitamaadmin.png",
+            stack : ['Laravel', 'VueJs']
+          },
+          {
+            name : "Grosir Mobil 2.0",
+            desc : "Situs eccomerce jual beli mobil",
+            picture : "grosirmobil.png",
+            stack : ['Laravel', 'VueJs']
+          },
           {
             name: "Negondeal",
             desc: "Penjualan Mobil secara Elektronik",
@@ -85,7 +96,7 @@ export default {
             desc: "Eccomerce penjualan hotwhells",
             picture: "rozorgaleri.png",
             stack: ['VueJs', 'Laravel']
-          },  
+          },
           {
             name: "Pengaduan Santri",
             desc: "Pengaduan antar santri dan guru (Tugas Akhir Bootcamp)",
@@ -116,15 +127,6 @@ export default {
             picture: "evoting.png",
             stack: ['PHP']
           },
-          {
-            name: "Mozaik Company Profile",
-            desc: "Pengenalan Mozaik Company melalui Website",
-            picture: "monsterslayer.png",
-            stack: ['PHP']
-          },
-
-
-
         ]
 
     }
