@@ -127,12 +127,20 @@
 <script>
 export default {
   transition: "slide-bottom",
+  head() {
+    return {
+      title: this.title,
+    };
+  },
+  computed: {
+    title() {
+      return this.$capitalizeFirstLetter(this.$route.name);
+    },
+  },
   data() {
     return {
-      contacts : [
-
-      ]
-    }
-  }
+      contacts: [],
+    };
+  },
 };
 </script>

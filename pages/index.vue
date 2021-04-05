@@ -13,7 +13,7 @@
         <!--Main Col-->
         <div
           id="profile"
-          class="w-full rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+          class="w-full rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-primary dark:bg-secondary opacity-75 mx-6 lg:mx-0"
         >
           <div class="p-4 md:p-12 text-center">
             <!-- Image for view-->
@@ -22,15 +22,19 @@
               class="block rounded-full shadow-xl mx-auto -mt-32 h-48 w-48 bg-cover bg-center object-cover"
               alt=""
             />
-            <h1 class="text-3xl font-bold pt-6">{{ name }}</h1>
+            <h1
+              class="text-3xl font-bold pt-6 text-secondary dark:text-primary"
+            >
+              {{ name }}
+            </h1>
             <div
-              class="mx-auto w-3/5 pt-3 border-b-2 border-indigo-600 opacity-25 shadow-2xl"
+              class="mx-auto w-3/5 pt-3 border-b-2 border-white-600 dark:border-indigo-600 opacity-25 shadow-2xl"
             ></div>
             <p
-              class="pt-4 text-base font-bold flex items-center justify-center"
+              class="pt-4 text-base text-secondary dark:text-primary font-bold flex items-center justify-center"
             >
               <svg
-                class="h-4 fill-current text-indigo-600 pr-4"
+                class="h-4 fill-current text-secondary dark:text-primary pr-4"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
@@ -41,10 +45,10 @@
               {{ job }} at {{ office }}
             </p>
             <p
-              class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center"
+              class="pt-2 text-secondary dark:text-primary text-xs lg:text-sm flex items-center justify-center"
             >
               <svg
-                class="h-4 fill-current text-indigo-600 pr-4"
+                class="h-4 fill-current text-secondary dark:text-primary pr-4"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
@@ -54,7 +58,7 @@
               </svg>
               {{ address }}
             </p>
-            <p class="p-8 lg:text-lg text-md">
+            <p class="p-8 lg:text-lg text-md text-secondary dark:text-primary">
               {{ description }}
             </p>
           </div>

@@ -8,37 +8,31 @@
               <div class="ml-10 flex items-baseline">
                 <nuxt-link
                   to="/"
-                  tag="a"
-                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700"
-                  :class="{ 'bg-blue-900': this.$route.path === '/' }"
+                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
                   >Home
                 </nuxt-link>
                 <!-- <a href="#">Home</a> -->
                 <nuxt-link
                   to="/skills"
-                  class="text-2xl ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-                  :class="{ 'bg-blue-900': this.$route.path === '/skills' }"
+                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
                   >Skills</nuxt-link
                 >
                 <nuxt-link
                   to="/projects"
                   href="#"
-                  class="text-2xl ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-                  :class="{ 'bg-blue-900': this.$route.path === '/projects' }"
+                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
                   >Projects</nuxt-link
                 >
                 <nuxt-link
                   to="/blog"
                   href="#"
-                  class="text-2xl ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-                  :class="{ 'bg-blue-900': this.$route.path === '/blog' }"
+                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
                   >Blog</nuxt-link
                 >
                 <nuxt-link
                   to="/contact"
                   href="#"
-                  class="text-2xl ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-                  :class="{ 'bg-blue-900': this.$route.path === '/contact' }"
+                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
                   >Contact</nuxt-link
                 >
               </div>
@@ -85,36 +79,31 @@
           <nuxt-link
             to="/"
             href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700"
-            :class="{ 'bg-gray-900': this.$route.path === '/' }"
+            class="block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
             >Home</nuxt-link
           >
           <nuxt-link
             to="/skills"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-            :class="{ 'bg-gray-900': this.$route.path === '/skills' }"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
             >Skills</nuxt-link
           >
           <nuxt-link
             to="/projects"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-            :class="{ 'bg-gray-900': this.$route.path === '/projects' }"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
             >Projects</nuxt-link
           >
           <nuxt-link
             to="/blog"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-            :class="{ 'bg-gray-900': this.$route.path === '/blog' }"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
             >Blog</nuxt-link
           >
           <nuxt-link
             to="/contact"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white"
-            :class="{ 'bg-gray-900': this.$route.path === '/contact' }"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
             >Contact</nuxt-link
           >
         </div>
@@ -137,3 +126,16 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+.dark-mode {
+  .nuxt-link-exact-active {
+    @apply bg-blue-900;
+  }
+}
+
+.light-mode {
+  .nuxt-link-exact-active {
+    @apply bg-gray-300;
+  }
+}
+</style>
