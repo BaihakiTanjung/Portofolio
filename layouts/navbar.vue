@@ -42,7 +42,7 @@
             <!-- Mobile menu button -->
             <button
               @click="toggle"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="inline-flex items-center justify-center p-2 rounded-md text-primary dark:text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
             >
               <svg
                 :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']"
