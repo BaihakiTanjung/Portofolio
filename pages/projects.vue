@@ -49,102 +49,132 @@ export default {
   transition: "slide-bottom",
   head() {
     return {
-      title: this.title,
+      title: this.title
     };
   },
   computed: {
     title() {
       return this.$capitalizeFirstLetter(this.$route.name);
-    },
+    }
   },
   data() {
     return {
       projects: [
         {
+          name: "Eccomerce Grosir Mobil",
+          desc: "Website eccomerce penjualan mobil",
+          picture: "eccormece-grosirmobil.png",
+          stack: ["NuxtJS"]
+        },
+        {
+          name: "Vehiclo 2.0",
+          desc: "Website pengelolaan barang kendaraan",
+          picture: "vehiclo2.png",
+          stack: ["NuxtJS"]
+        },
+        {
+          name: "Dashboard",
+          desc: "Dashboard hasil jual beli",
+          picture: "dashboard.png",
+          stack: ["VueJs"]
+        },
+        {
+          name: "Vehiclo",
+          desc: "Pengelolaan asset kendaraan",
+          picture: "vehiclo.png",
+          stack: ["Laravel", "VueJs"]
+        },
+        {
           name: "Sitama Admin",
           desc: "Pengelolaan data semua bisnis",
           picture: "sitamaadmin.png",
-          stack: ["Laravel", "VueJs"],
+          stack: ["Laravel", "VueJs"]
+        },
+        {
+          name: "Portofolio",
+          desc: "Portofolioku",
+          picture: "portofolio.png",
+          stack: ["NuxtJs"]
         },
         {
           name: "Grosir Mobil 2.0",
           desc: "Situs eccomerce jual beli mobil",
           picture: "grosirmobil.png",
-          stack: ["Laravel", "VueJs"],
+          stack: ["Laravel", "VueJs"]
         },
         {
           name: "Negondeal",
           desc: "Penjualan Mobil secara Elektronik",
           picture: "negondeal.png",
-          stack: ["Laravel", "VueJs"],
+          stack: ["Laravel", "VueJs"]
         },
         {
           name: "Admin Negondeal",
           desc: "Manajemen, Mengatur aplikasi negondeal",
           picture: "adminnegondeal.png",
-          stack: ["Laravel", "VueJs"],
+          stack: ["Laravel", "VueJs"]
         },
         {
           name: "Monster Slayer",
           desc: "Simple game seperti MMORPG",
           picture: "monsterslayer.png",
-          stack: ["VueJs"],
+          stack: ["VueJs"]
         },
         {
           name: "Logtify",
           desc: "Pengolah data absensi",
           picture: "logtify.png",
-          stack: ["VueJs", "Laravel"],
+          stack: ["VueJs", "Laravel"]
         },
         {
           name: "Admin Grosir Mobil",
           desc: "Manajemen Mengatur Aplikasi Grosir Mobil",
           picture: "admingrosirmobil.png",
-          stack: ["VueJs", "Laravel"],
+          stack: ["VueJs", "Laravel"]
         },
         {
           name: "Rozor Galeri",
           desc: "Eccomerce penjualan hotwhells",
           picture: "rozorgaleri.png",
-          stack: ["VueJs", "Laravel"],
+          stack: ["VueJs", "Laravel"]
         },
         {
           name: "Pengaduan Santri",
           desc: "Pengaduan antar santri dan guru (Tugas Akhir Bootcamp)",
           picture: "pengaduan.png",
-          stack: ["Laravel"],
+          stack: ["Laravel"]
         },
         {
           name: "Telegram Bot Message",
           desc: "Mengirim pesan ke Telegram dengan Bot",
           picture: "telegrambot.png",
-          stack: ["Javascript"],
+          stack: ["Javascript"]
         },
         {
           name: "Bacot Generator",
           desc: "Pengubah huruf vocal teks menjadi I",
           picture: "bacotgenerator.png",
-          stack: ["Javascript"],
+          stack: ["Javascript"]
         },
         {
           name: "Yayasan Quran Company Profile",
           desc: "Pengenalan Yayasan Quran melalui Website",
           picture: "ycquran.png",
-          stack: ["Laravel"],
+          stack: ["Laravel"]
         },
         {
           name: "E-Voting",
           desc: "Pemilihan secara elektronik",
           picture: "evoting.png",
-          stack: ["PHP"],
-        },
-      ],
+          stack: ["PHP"]
+        }
+      ]
     };
   },
   methods: {
     getPict(pict) {
       return require(`~/assets/images/projects/` + pict);
-    },
-  },
+    }
+  }
 };
 </script>
