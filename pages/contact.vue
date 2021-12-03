@@ -1,9 +1,9 @@
 <template>
   <div>
     <section>
-      <div class="font-sans antialiased leading-normal tracking-wider bg-cover">
+      <div class=" antialiased leading-normal tracking-wider bg-cover">
         <div
-          class="max-w-4xl flex items-center h-auto flex-wrap mx-auto my-16 lg:my-64"
+          class="max-w-4xl flex-wrap mx-auto my-1 lg:my-1"
         >
           <!--Main Col-->
           <div

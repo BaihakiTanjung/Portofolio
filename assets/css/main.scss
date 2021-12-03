@@ -1,11 +1,16 @@
+// Fonts
+@font-face {
+  font-family: "Poppins";
+  src: url("~assets/font/Poppins-Regular.ttf");
+}
+
 body {
-  // background-color: #2d3748;
+  font-family: "Poppins", sans-serif !important;
 }
 
 section {
   padding: 1.5rem;
 }
-
 
 // Skill
 // Variables
@@ -31,7 +36,8 @@ $white: #fff;
 
     .card-hover {
       &::before {
-        transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+        transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+          translate3d(0, 100%, 0);
       }
     }
   }
@@ -52,7 +58,8 @@ $white: #fff;
     top: 0;
     width: 100%;
     height: 100%;
-    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+      translate3d(0, -100%, 0);
     transition: transform 0.6s;
   }
 }

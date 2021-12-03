@@ -27,13 +27,13 @@
                   to="/blog"
                   href="#"
                   class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
-                  >Blog</nuxt-link
+                  >Blogs</nuxt-link
                 >
                 <nuxt-link
                   to="/contact"
                   href="#"
                   class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
-                  >Contact</nuxt-link
+                  >Contacts</nuxt-link
                 >
               </div>
             </div>

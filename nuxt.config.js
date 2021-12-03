@@ -1,3 +1,4 @@
+const defer = 'defer'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -12,22 +13,24 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: 'portofolio baihaki al biruni'
       }
     ],
-    link: [{
+    link: [
+      {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
-    }]
+      },
+      { rel: 'stylesheet', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css' }
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     // CSS file in the project
-    '@/assets/css/main.css',
-    '@/assets/css/devicon/devicon-colors.css',
-    '@/assets/css/devicon/devicon.css'
+    '@/assets/css/main.scss',
+
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -48,5 +51,5 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-  plugins : ['~/plugins/global.js']
+  plugins: ['~/plugins/global.js', { src: '~/plugins/vue-tilt.js', ssr: false }]
 }

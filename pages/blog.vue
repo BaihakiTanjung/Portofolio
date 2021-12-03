@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <h1 class="text-center text-4xl text-primary dark:text-secondary">-_-</h1>
+      <h1 class="text-center text-4xl text-primary dark:text-secondary">😎</h1>
     </section>
   </div>
 </template>
