@@ -209,8 +209,30 @@ export default {
   },
   computed: {
     skillsList() {
-      console.log(this.skills.sort(a));
-      return this.skills.sort();
+      const orderExperience = ["y", "m"];
+
+      console.log(
+        this.skills.sort((a, b) => {
+          if (a.experience !== b.experience) {
+            return b.experience - a.experience;
+          } else {
+            return (
+              orderExperience.indexOf(a.orderExperience) -
+              orderExperience.indexOf(b.orderExperience)
+            );
+          }
+        })
+      );
+      return this.skills.sort((a, b) => {
+          if (a.experienceYear !== b.experienceYear) {
+            return b.experience - a.experience;
+          } else {
+            return (
+              orderExperience.indexOf(a.experience) -
+              orderExperience.indexOf(b.experience)
+            );
+          }
+        })
     },
   },
 };
