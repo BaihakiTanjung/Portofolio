@@ -8,31 +8,76 @@
               <div class="ml-10 flex items-baseline">
                 <nuxt-link
                   to="/"
-                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
+                  class="
+                    text-2xl
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    text-primary
+                    dark:text-secondary
+                  "
                   >Home
                 </nuxt-link>
                 <!-- <a href="#">Home</a> -->
                 <nuxt-link
                   to="/skills"
-                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
+                  class="
+                    text-2xl
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    text-primary
+                    dark:text-secondary
+                  "
                   >Skills</nuxt-link
                 >
                 <nuxt-link
                   to="/projects"
                   href="#"
-                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
+                  class="
+                    text-2xl
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    text-primary
+                    dark:text-secondary
+                  "
                   >Projects</nuxt-link
                 >
                 <nuxt-link
-                  to="/blog"
+                  to="/blogs"
                   href="#"
-                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
+                  class="
+                    text-2xl
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    text-primary
+                    dark:text-secondary
+                  "
                   >Blogs</nuxt-link
                 >
                 <nuxt-link
-                  to="/contact"
+                  to="/contacts"
                   href="#"
-                  class="text-2xl px-3 py-2 rounded-md text-sm font-medium text-primary dark:text-secondary"
+                  class="
+                    text-2xl
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    text-primary
+                    dark:text-secondary
+                  "
                   >Contacts</nuxt-link
                 >
               </div>
@@ -42,7 +87,17 @@
             <!-- Mobile menu button -->
             <button
               @click="toggle"
-              class="inline-flex items-center justify-center p-2 rounded-md text-primary dark:text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="
+                inline-flex
+                items-center
+                justify-center
+                p-2
+                rounded-md
+                text-primary
+                dark:text-secondary
+                hover:text-white hover:bg-gray-700
+                focus:outline-none focus:bg-gray-700 focus:text-white
+              "
             >
               <svg
                 :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']"
@@ -75,35 +130,87 @@
         </div>
       </div>
       <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
-        <div class="px-2 pt-2 pb-3 sm:px-3">
+        <div
+          v-animate-css="{ classes: 'fadeInRight', delay: 100 }"
+          class="px-2 pt-2 pb-3 sm:px-3"
+        >
           <nuxt-link
             to="/"
             href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
+            class="
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              text-primary
+              dark:text-secondary
+            "
             >Home</nuxt-link
           >
           <nuxt-link
             to="/skills"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              text-primary
+              dark:text-secondary
+            "
             >Skills</nuxt-link
           >
           <nuxt-link
             to="/projects"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              text-primary
+              dark:text-secondary
+            "
             >Projects</nuxt-link
           >
           <nuxt-link
-            to="/blog"
+            to="/blogs"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              text-primary
+              dark:text-secondary
+            "
             >Blog</nuxt-link
           >
           <nuxt-link
-            to="/contact"
+            to="/contacts"
             href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary dark:text-secondary"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              text-primary
+              dark:text-secondary
+            "
             >Contact</nuxt-link
           >
         </div>

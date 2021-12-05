@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <section>
-      <h1 class="text-center text-4xl text-primary dark:text-secondary">😎</h1>
-    </section>
-  </div>
+  <section class="blogs">
+    <h1 class="text-center text-4xl text-primary dark:text-secondary">😎</h1>
+  </section>
 </template>
 <script>
 export default {

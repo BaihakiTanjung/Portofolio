@@ -1,48 +1,43 @@
 <template>
-  <div>
-    <section>
-      <div class="skills">
-        <div class="container px-4 mx-auto">
-          <div class="sm:flex sm:flex-wrap sm:-mx-4 pb-6">
-            <div
-              v-for="skill in skillsList"
-              :key="skill.name"
-              class="sm:px-6 sm:w-1/2 lg:w-1/4 mt-8"
-            >
-              <div class="card-item mx-auto max-w-sm text-center">
-                <i
-                  v-if="skill.icon != ''"
-                  class="colored"
-                  :class="skill.icon"
-                  style="font-size: 15rem"
-                ></i>
-                <img v-else :src="skill.url" alt="skill" srcset="" />
-                <div class="px-1 py-4 text-center">
-                  <h5
-                    class="
-                      font-semibold
-                      text-xl text-primary
-                      dark:text-secondary
-                    "
-                  >
-                    {{ skill.name }}
-                  </h5>
-                  <p class="text-gray-600">
-                    <span class="font-bold">{{
-                      `${skill.experience} ${
-                        skill.experienceYear == "m" ? "Months" : "Years"
-                      }`
-                    }}</span>
-                    of experience
-                  </p>
-                </div>
-              </div>
+  <section class="skills">
+    <div class="container px-4 mx-auto">
+      <div class="sm:flex sm:flex-wrap sm:-mx-4 pb-6">
+        <div
+          v-for="(skill, index) in skillsList"
+          :key="skill.name"
+          class="sm:px-6 sm:w-1/2 lg:w-1/4 mt-8"
+        >
+          <div
+            v-animate-css="{ classes: 'zoomInDown', delay: 100 * index + 50 }"
+            class="card-item mx-auto max-w-sm text-center"
+          >
+            <i
+              v-if="skill.icon != ''"
+              class="colored"
+              :class="skill.icon"
+              style="font-size: 10rem"
+            ></i>
+            <img v-else :src="skill.url" alt="skill" srcset="" />
+            <div class="px-1 py-4 text-center">
+              <h5
+                class="font-semibold text-xl text-primary dark:text-secondary"
+              >
+                {{ skill.name }}
+              </h5>
+              <p class="text-gray-600">
+                <span class="font-bold">{{
+                  `${skill.experience} ${
+                    skill.experienceYear == "m" ? "Months" : "Years"
+                  }`
+                }}</span>
+                of experience
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 <script>
 export default {
@@ -58,20 +53,9 @@ export default {
       ],
     };
   },
-  computed: {
-    title() {
-      return this.$capitalizeFirstLetter(this.$route.name);
-    },
-  },
   data() {
     return {
       skills: [
-        {
-          name: "Photoshop",
-          icon: "devicon-photoshop-plain",
-          experience: 3,
-          experienceYear: "y",
-        },
         {
           name: "CSS",
           icon: "devicon-css3-plain",
@@ -157,12 +141,6 @@ export default {
           experienceYear: "m",
         },
         {
-          name: "Visual Studio Code",
-          icon: "devicon-vscode-plain",
-          experience: 4,
-          experienceYear: "y",
-        },
-        {
           name: "Redis",
           icon: "devicon-redis-plain",
           experience: 1,
@@ -211,28 +189,15 @@ export default {
     skillsList() {
       const orderExperience = ["y", "m"];
 
-      console.log(
-        this.skills.sort((a, b) => {
-          if (a.experience !== b.experience) {
-            return b.experience - a.experience;
-          } else {
-            return (
-              orderExperience.indexOf(a.orderExperience) -
-              orderExperience.indexOf(b.orderExperience)
-            );
-          }
-        })
-      );
       return this.skills.sort((a, b) => {
-          if (a.experienceYear !== b.experienceYear) {
-            return b.experience - a.experience;
-          } else {
-            return (
-              orderExperience.indexOf(a.experience) -
-              orderExperience.indexOf(b.experience)
-            );
-          }
-        })
+        return (
+          orderExperience.indexOf(a.experienceYear) -
+          orderExperience.indexOf(b.experienceYear)
+        );
+      });
+    },
+    title() {
+      return this.$capitalizeFirstLetter(this.$route.name);
     },
   },
 };

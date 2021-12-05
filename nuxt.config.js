@@ -43,7 +43,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@vueuse/core/nuxt',
+    '@nuxtjs/composition-api/module'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -51,5 +53,5 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-  plugins: ['~/plugins/global.js', { src: '~/plugins/vue-tilt.js', ssr: false }]
+  plugins: ['~/plugins/global.js', { src: '~/plugins/vue-tilt.js', ssr: false }, { src :'~/plugins/v-animate.js', ssr:false}],
 }

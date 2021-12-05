@@ -1,10 +1,11 @@
 <template>
   <div class="container mx-auto">
-    <navbar></navbar>
+    <navbar v-animate-css="{ classes: 'fadeInDown' }"></navbar>
     <Nuxt />
     <div class="absolute animate-bounce m-5 top-0 right-0">
       <button class="p-1 rounded" @click="changeMode">
         <img
+          v-animate-css="{ classes: 'fadeInDown', delay: 1000 }"
           :src="require(`~/assets/images/${mode}-mode.svg`)"
           width="24"
           height="24"
