@@ -1,37 +1,41 @@
-const defer = 'defer'
+const defer = "defer";
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Baihaki Al Biruni',
-    meta: [{
-        charset: 'utf-8'
+    title: "Baihaki Al Biruni",
+    meta: [
+      {
+        charset: "utf-8",
       },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'portofolio baihaki al biruni'
-      }
+        hid: "description",
+        name: "description",
+        content: "portofolio baihaki al biruni",
+      },
     ],
     link: [
       {
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
       },
-      { rel: 'stylesheet', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css' }
+      {
+        rel: "stylesheet",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css",
+      },
     ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     // CSS file in the project
-    '@/assets/css/main.scss',
-
+    "@/assets/css/main.scss",
   ],
+  ssr: false,
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -42,10 +46,10 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    '@vueuse/core/nuxt',
-    '@nuxtjs/composition-api/module'
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@vueuse/core/nuxt",
+    "@nuxtjs/composition-api/module",
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -53,5 +57,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-  plugins: ['~/plugins/global.js', { src: '~/plugins/vue-tilt.js', ssr: false }, { src :'~/plugins/v-animate.js', ssr:false}],
-}
+  plugins: [
+    "~/plugins/global.js",
+    { src: "~/plugins/vue-tilt.js", ssr: false },
+    { src: "~/plugins/v-animate.js", ssr: false },
+  ],
+};

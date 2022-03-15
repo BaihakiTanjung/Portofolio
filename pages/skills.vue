@@ -57,70 +57,22 @@ export default {
     return {
       skills: [
         {
-          name: "CSS",
-          icon: "devicon-css3-plain",
-          experience: 4,
-          experienceYear: "y",
-        },
-        {
-          name: "PHP",
-          icon: "devicon-php-plain",
-          experience: 4,
-          experienceYear: "y",
-        },
-        {
-          name: "SASS",
-          icon: "devicon-sass-plain",
-          experience: 1,
-          experienceYear: "y",
-        },
-        {
-          name: "Webpack",
-          icon: "devicon-webpack-plain",
-          experience: 1,
-          experienceYear: "y",
-        },
-        {
-          name: "Babel",
-          icon: "devicon-babel-plain",
-          experience: 1,
-          experienceYear: "y",
-        },
-        {
-          name: "Composer",
-          icon: "devicon-composer-plain",
-          experience: 1,
-          experienceYear: "y",
-        },
-        {
           name: "Flutter",
           icon: "devicon-flutter-plain",
           experience: 2,
           experienceYear: "m",
         },
         {
-          name: "Github",
-          icon: "devicon-github-plain",
-          experience: 2,
-          experienceYear: "y",
-        },
-        {
-          name: "Javascript",
-          icon: "devicon-javascript-plain",
-          experience: 2,
-          experienceYear: "y",
-        },
-        {
           name: "VueJS",
           icon: "devicon-vuejs-plain",
-          experience: 1.8,
+          experience: 2,
           experienceYear: "y",
         },
         {
           name: "NuxtJS",
           icon: "devicon-nuxtjs-plain",
-          experience: 8,
-          experienceYear: "m",
+          experience: 1,
+          experienceYear: "y",
         },
         {
           name: "Laravel",
@@ -137,26 +89,8 @@ export default {
         {
           name: "Typescript",
           icon: "devicon-typescript-plain",
-          experience: 3,
+          experience: 5,
           experienceYear: "m",
-        },
-        {
-          name: "Redis",
-          icon: "devicon-redis-plain",
-          experience: 1,
-          experienceYear: "m",
-        },
-        {
-          name: "NodeJS",
-          icon: "devicon-nodejs-plain",
-          experience: 1,
-          experienceYear: "m",
-        },
-        {
-          name: "Jquery",
-          icon: "devicon-jquery-plain",
-          experience: 4,
-          experienceYear: "y",
         },
         {
           name: "ExpressJS",

@@ -936,6 +936,11 @@
   resolved "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.2.tgz"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
+"@headlessui/vue@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.5.0.tgz#8cd4877d3d344e482073a04ae8e3b7f987bb267c"
+  integrity sha512-jAp6XYpqdEv32xhszaj5ejvjaX5qhu20sCbxu7lplePEfZL+4ffabivJBBTZAiPWczqAXmnZWNWG5DOyqjRa4w==
+
 "@koa/router@^9.0.1":
   version "9.4.0"
   resolved "https://registry.npmjs.org/@koa/router/-/router-9.4.0.tgz"

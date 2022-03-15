@@ -11,6 +11,7 @@
             v-animate-css="{ classes: 'zoomInRight', delay: 100 * index + 50 }"
             class="card-item mx-auto max-w-sm"
           >
+          <a :href="project.url">
             <div class="card-img relative overflow-hidden cursor-pointer">
               <img
                 :src="getPict(project.picture)"
@@ -19,6 +20,7 @@
               />
               <div class="card-hover"></div>
             </div>
+          </a>
             <div class="px-1 py-4">
               <h5
                 class="font-semibold text-xl text-primary dark:text-secondary"
@@ -74,6 +76,13 @@ export default {
     return {
       projects: [
         {
+          name: "Sitama Admin 3",
+          desc: "Website content management system",
+          picture: "sitama-admin-3.webp",
+          url : 'https://sitama-admin.com',
+          stack: ["NuxtJS", "Vuetify"],
+        },
+        {
           name: "Sitama PKP",
           desc: "Website management selling",
           picture: "pkp.webp",
@@ -83,6 +92,7 @@ export default {
           name: "Find me by",
           desc: "Website search cation youtube url",
           picture: "findmeby.webp",
+          url : "https://findmeby.netlify.app/",
           stack: ["NuxtJS", "Vuetify"],
         },
         {
@@ -107,6 +117,7 @@ export default {
           name: "Indo Event",
           desc: "Ticketing system website",
           picture: "indo-event.webp",
+          url : "http://demo.indoevent.id/",
           stack: ["NuxtJS", "Boostrap"],
         },
         {
