@@ -1,29 +1,29 @@
 <template>
   <section class="projects">
     <div class="container px-4 mx-auto text-center">
-      <div class="sm:flex sm:flex-wrap sm:-mx-4 pb-6">
+      <div class="pb-6 sm:flex sm:flex-wrap sm:-mx-4">
         <div
           v-for="(project, index) in projects"
           :key="project.name"
-          class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8"
+          class="mt-8 sm:px-6 sm:w-1/2 lg:w-1/3"
         >
           <div
             v-animate-css="{ classes: 'zoomInRight', delay: 100 * index + 50 }"
-            class="card-item mx-auto max-w-sm"
+            class="max-w-sm mx-auto card-item"
           >
-          <a :href="project.url">
-            <div class="card-img relative overflow-hidden cursor-pointer">
-              <img
-                :src="getPict(project.picture)"
-                alt="card image"
-                class="object-cover h-48 w-full"
-              />
-              <div class="card-hover"></div>
-            </div>
-          </a>
+            <a target="_blank" :href="project.url">
+              <div class="relative overflow-hidden cursor-pointer card-img">
+                <img
+                  :src="getPict(project.picture)"
+                  alt="card image"
+                  class="object-cover w-full h-48"
+                />
+                <div class="card-hover"></div>
+              </div>
+            </a>
             <div class="px-1 py-4">
               <h5
-                class="font-semibold text-xl text-primary dark:text-secondary"
+                class="text-xl font-semibold text-primary dark:text-secondary"
               >
                 {{ project.name }}
               </h5>
@@ -35,21 +35,7 @@
               <span
                 v-for="stack in project.stack"
                 :key="stack"
-                class="
-                  inline-block
-                  bg-primary
-                  dark:bg-secondary
-                  opacity-75
-                  rounded-lg
-                  px-3
-                  py-1
-                  text-sm
-                  font-bold
-                  text-secondary
-                  dark:text-primary
-                  mr-2
-                  mb-2
-                "
+                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-bold rounded-lg opacity-75  bg-primary dark:bg-secondary text-secondary dark:text-primary"
                 >{{ stack }}</span
               >
             </div>
@@ -79,20 +65,21 @@ export default {
           name: "Sitama Admin 3",
           desc: "Website content management system",
           picture: "sitama-admin-3.webp",
-          url : 'https://sitama-admin.com',
+          url: "https://sitama-admin.com",
           stack: ["NuxtJS", "Vuetify"],
         },
         {
           name: "Sitama PKP",
           desc: "Website management selling",
           picture: "pkp.webp",
+          url: "https://finance.sitama.co.id/",
           stack: ["NuxtJS", "Vuetify"],
         },
         {
           name: "Find me by",
           desc: "Website search cation youtube url",
           picture: "findmeby.webp",
-          url : "https://findmeby.netlify.app/",
+          url: "https://findmeby.netlify.app/",
           stack: ["NuxtJS", "Vuetify"],
         },
         {
@@ -111,13 +98,14 @@ export default {
           name: "Vehiclo 2.0",
           desc: "Vehicle management website",
           picture: "vehiclo2.webp",
+          url: "https://vehiclo.id",
           stack: ["NuxtJS", "Buefy"],
         },
         {
           name: "Indo Event",
           desc: "Ticketing system website",
           picture: "indo-event.webp",
-          url : "http://demo.indoevent.id/",
+          url: "http://demo.indoevent.id/",
           stack: ["NuxtJS", "Boostrap"],
         },
         {
@@ -148,6 +136,7 @@ export default {
           name: "Grosir Mobil 2.0",
           desc: "E-commerce site for buying and selling cars",
           picture: "grosirmobil.webp",
+          url: "https://grosirmobil.id",
           stack: ["Laravel", "VueJs", "Boostrap"],
         },
         {
