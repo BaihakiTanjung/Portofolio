@@ -1,26 +1,10 @@
 <template>
   <section class="home">
     <div
-      class="
-        container
-        antialiased
-        text-gray-900
-        leading-normal
-        tracking-wider
-        bg-cover
-      "
+      class="container antialiased leading-normal tracking-wider text-gray-900 bg-cover "
     >
       <div
-        class="
-          max-w-4xl
-          flex
-          items-center
-          h-auto
-          flex-wrap
-          mx-auto
-          my-32
-          lg:my-32
-        "
+        class="flex flex-wrap items-center h-auto max-w-4xl mx-auto my-32  lg:my-32"
       >
         <!--Main Col-->
         <Tilt
@@ -31,68 +15,31 @@
         >
           <div
             id="profile"
-            class="
-              w-full
-              rounded-lg
-              lg:rounded-l-lg lg:rounded-r-none
-              shadow-2xl
-              bg-primary
-              dark:bg-secondary
-              opacity-75
-              mx-6
-              lg:mx-0
-              child-parallax
-            "
+            class="w-full mx-6 rounded-lg shadow-2xl opacity-75  lg:rounded-l-lg lg:rounded-r-none bg-primary dark:bg-secondary lg:mx-0 child-parallax"
           >
-            <div class="p-4 md:p-12 text-center child-html">
+            <div class="p-4 text-center md:p-12 child-html">
               <!-- Image for view-->
               <img
                 v-animate-css="{ classes: 'fadeInDown', delay: 200 }"
                 src="~/assets/images/photo.jpg"
-                class="
-                  block
-                  rounded-full
-                  shadow-xl
-                  mx-auto
-                  -mt-32
-                  h-48
-                  w-48
-                  bg-cover bg-center
-                  object-cover
-                "
+                class="block object-cover w-48 h-48 mx-auto -mt-32 bg-center bg-cover rounded-full shadow-xl "
                 alt=""
               />
               <h1
                 v-animate-css="{ classes: 'fadeInUp', delay: 100 }"
-                class="text-3xl font-bold pt-6 text-secondary dark:text-primary"
+                class="pt-6 text-3xl font-bold text-secondary dark:text-primary"
               >
                 {{ name }}
               </h1>
               <div
-                class="
-                  mx-auto
-                  w-3/5
-                  pt-3
-                  border-b-2 border-white-600
-                  dark:border-indigo-600
-                  opacity-25
-                  shadow-2xl
-                "
+                class="w-3/5 pt-3 mx-auto border-b-2 shadow-2xl opacity-25  border-white-600 dark:border-indigo-600"
               ></div>
               <p
                 v-animate-css="{ classes: 'fadeInUp', delay: 200 }"
-                class="
-                  pt-4
-                  text-base text-secondary
-                  dark:text-primary
-                  font-bold
-                  flex
-                  items-center
-                  justify-center
-                "
+                class="flex items-center justify-center pt-4 text-base font-bold  text-secondary dark:text-primary"
               >
                 <svg
-                  class="h-4 fill-current text-secondary dark:text-primary pr-4"
+                  class="h-4 pr-4 fill-current text-secondary dark:text-primary"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -100,23 +47,14 @@
                     d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
                   />
                 </svg>
-                {{ job }} at {{ office }}
+                {{ job }}
               </p>
               <p
                 v-animate-css="{ classes: 'fadeInUp', delay: 300 }"
-                class="
-                  pt-2
-                  text-secondary
-                  dark:text-primary
-                  text-xs
-                  lg:text-sm
-                  flex
-                  items-center
-                  justify-center
-                "
+                class="flex items-center justify-center pt-2 text-xs  text-secondary dark:text-primary lg:text-sm"
               >
                 <svg
-                  class="h-4 fill-current text-secondary dark:text-primary pr-4"
+                  class="h-4 pr-4 fill-current text-secondary dark:text-primary"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -138,65 +76,28 @@
         <div
           v-else
           id="profile"
-          class="
-            w-full
-            rounded-lg
-            lg:rounded-l-lg lg:rounded-r-none
-            shadow-2xl
-            bg-primary
-            dark:bg-secondary
-            opacity-75
-            mx-6
-            lg:mx-0
-            child-parallax
-          "
+          class="w-full mx-6 rounded-lg shadow-2xl opacity-75  lg:rounded-l-lg lg:rounded-r-none bg-primary dark:bg-secondary lg:mx-0 child-parallax"
         >
-          <div class="p-4 md:p-12 text-center child-html">
+          <div class="p-4 text-center md:p-12 child-html">
             <!-- Image for view-->
             <img
               src="~/assets/images/photo.jpg"
-              class="
-                block
-                rounded-full
-                shadow-xl
-                mx-auto
-                -mt-32
-                h-48
-                w-48
-                bg-cover bg-center
-                object-cover
-              "
+              class="block object-cover w-48 h-48 mx-auto -mt-32 bg-center bg-cover rounded-full shadow-xl "
               alt=""
             />
             <h1
-              class="text-3xl font-bold pt-6 text-secondary dark:text-primary"
+              class="pt-6 text-3xl font-bold text-secondary dark:text-primary"
             >
               {{ name }}
             </h1>
             <div
-              class="
-                mx-auto
-                w-3/5
-                pt-3
-                border-b-2 border-white-600
-                dark:border-indigo-600
-                opacity-25
-                shadow-2xl
-              "
+              class="w-3/5 pt-3 mx-auto border-b-2 shadow-2xl opacity-25  border-white-600 dark:border-indigo-600"
             ></div>
             <p
-              class="
-                pt-4
-                text-base text-secondary
-                dark:text-primary
-                font-bold
-                flex
-                items-center
-                justify-center
-              "
+              class="flex items-center justify-center pt-4 text-base font-bold  text-secondary dark:text-primary"
             >
               <svg
-                class="h-4 fill-current text-secondary dark:text-primary pr-4"
+                class="h-4 pr-4 fill-current text-secondary dark:text-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
@@ -207,19 +108,10 @@
               {{ job }} at {{ office }}
             </p>
             <p
-              class="
-                pt-2
-                text-secondary
-                dark:text-primary
-                text-xs
-                lg:text-sm
-                flex
-                items-center
-                justify-center
-              "
+              class="flex items-center justify-center pt-2 text-xs  text-secondary dark:text-primary lg:text-sm"
             >
               <svg
-                class="h-4 fill-current text-secondary dark:text-primary pr-4"
+                class="h-4 pr-4 fill-current text-secondary dark:text-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
@@ -229,7 +121,7 @@
               </svg>
               {{ address }}
             </p>
-            <p class="p-8 lg:text-lg text-md text-secondary dark:text-primary">
+            <p class="p-8 text-sm lg:text-lg text-secondary dark:text-primary">
               {{ description }}
             </p>
           </div>
@@ -255,7 +147,7 @@ export default {
     return {
       name: "Baihaki Al Biruni",
       job: "Frontend Engineer",
-      office: "SIP",
+      // office: "SIP",
       address: "Bogor, Parung Panjang",
       description:
         "Web Developer Enthusiast likes things related to technology 💻 and also loves the world of investment 💰.",

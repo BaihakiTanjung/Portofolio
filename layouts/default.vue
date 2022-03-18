@@ -2,7 +2,8 @@
   <div class="container mx-auto">
     <navbar v-animate-css="{ classes: 'fadeInDown' }"></navbar>
     <Nuxt />
-    <div class="absolute animate-bounce m-5 top-0 right-0">
+
+    <div class="absolute top-0 right-0 m-5 animate-bounce">
       <button class="p-1 rounded" @click="changeMode">
         <img
           v-animate-css="{ classes: 'fadeInDown', delay: 1000 }"
@@ -38,7 +39,6 @@ export default {
 .dark-mode {
   @apply text-secondary bg-primary;
 }
-,
 .light-mode {
   @apply text-primary bg-secondary;
 }

@@ -66,21 +66,51 @@ export default {
           desc: "Website content management system",
           picture: "sitama-admin-3.webp",
           url: "https://sitama-admin.com",
-          stack: ["NuxtJS", "Vuetify"],
+          stack: ["NuxtJS", "Vuetify", "Composition API", "Vuex"],
         },
         {
           name: "Sitama PKP",
           desc: "Website management selling",
           picture: "pkp.webp",
           url: "https://finance.sitama.co.id/",
-          stack: ["NuxtJS", "Vuetify"],
+          stack: ["NuxtJS", "Vuetify", "Vuex", "Socket.io"],
         },
+
+        {
+          name: "Chat Realtime",
+          desc: "Chat Realtime",
+          picture: "chat-realtime.webp",
+          url: "https://github.com/BaihakiTanjung/vue-realtime-chat",
+          stack: ["VueJs", "Laravel", "Firebase"],
+        },
+        {
+          name: "Simple Realtime Bidding",
+          desc: "A realtime bidding system for a company",
+          picture: "realtime-bidding.webp",
+          url: "",
+          stack: ["VueJs", "Laravel", "Socket.io"],
+        },
+        {
+          name: "Nuxt Authentication",
+          desc: "Nuxt auth with sanctum, login via google and facebook",
+          picture: "nuxt-authentication.webp",
+          url: "https://nuxt-bay.herokuapp.com/login",
+          stack: ["NuxtJs", "Laravel"],
+        },
+        {
+          name: "Mobile Movie App",
+          desc: "Movie App simple open source project",
+          picture: "movie-app.webp",
+          url: "https://github.com/BaihakiTanjung/react-ionic",
+          stack: ["Ionic", "Tailwind", "React", "Typescript"],
+        },
+
         {
           name: "Find me by",
           desc: "Website search cation youtube url",
           picture: "findmeby.webp",
           url: "https://findmeby.netlify.app/",
-          stack: ["NuxtJS", "Vuetify"],
+          stack: ["NuxtJS", "Vuetify", "Vuex"],
         },
         {
           name: "Eccomerce Grosir Mobil V2",
@@ -99,7 +129,7 @@ export default {
           desc: "Vehicle management website",
           picture: "vehiclo2.webp",
           url: "https://vehiclo.id",
-          stack: ["NuxtJS", "Buefy"],
+          stack: ["NuxtJS", "Buefy", "Vuex"],
         },
         {
           name: "Indo Event",

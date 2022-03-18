@@ -1,103 +1,48 @@
 <template>
   <div>
     <nav>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex items-center justify-center sm:h-16 md:h-32">
           <div class="flex items-center">
             <div class="hidden text-right md:block">
-              <div class="ml-10 flex items-baseline">
+              <div class="flex items-baseline ml-10">
                 <nuxt-link
                   to="/"
-                  class="
-                    text-2xl
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                    text-primary
-                    dark:text-secondary
-                  "
+                  class="px-3 py-2 text-2xl font-medium rounded-md  text-primary dark:text-secondary"
                   >Home
                 </nuxt-link>
                 <!-- <a href="#">Home</a> -->
                 <nuxt-link
                   to="/skills"
-                  class="
-                    text-2xl
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                    text-primary
-                    dark:text-secondary
-                  "
+                  class="px-3 py-2 text-2xl font-medium rounded-md  text-primary dark:text-secondary"
                   >Skills</nuxt-link
                 >
                 <nuxt-link
                   to="/projects"
                   href="#"
-                  class="
-                    text-2xl
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                    text-primary
-                    dark:text-secondary
-                  "
+                  class="px-3 py-2 text-2xl font-medium rounded-md  text-primary dark:text-secondary"
                   >Projects</nuxt-link
                 >
                 <nuxt-link
                   to="/blogs"
                   href="#"
-                  class="
-                    text-2xl
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                    text-primary
-                    dark:text-secondary
-                  "
+                  class="px-3 py-2 text-2xl font-medium rounded-md  text-primary dark:text-secondary"
                   >Blogs</nuxt-link
                 >
                 <nuxt-link
                   to="/contacts"
                   href="#"
-                  class="
-                    text-2xl
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                    text-primary
-                    dark:text-secondary
-                  "
+                  class="px-3 py-2 text-2xl font-medium rounded-md  text-primary dark:text-secondary"
                   >Contacts</nuxt-link
                 >
               </div>
             </div>
           </div>
-          <div class="-mr-2 flex md:hidden py-5">
+          <div class="flex py-5 -mr-2 md:hidden">
             <!-- Mobile menu button -->
             <button
               @click="toggle"
-              class="
-                inline-flex
-                items-center
-                justify-center
-                p-2
-                rounded-md
-                text-primary
-                dark:text-secondary
-                hover:text-white hover:bg-gray-700
-                focus:outline-none focus:bg-gray-700 focus:text-white
-              "
+              class="inline-flex items-center justify-center p-2 rounded-md  text-primary dark:text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
             >
               <svg
                 :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']"
@@ -131,86 +76,37 @@
       </div>
       <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
         <div
-          v-animate-css="{ classes: 'fadeInRight', delay: 100 }"
-          class="px-2 pt-2 pb-3 sm:px-3"
+          v-animate-css="{ classes: 'fadeInCenter', delay: 100 }"
+          class="px-2 pt-2 pb-3 text-center sm:px-3"
         >
           <nuxt-link
             to="/"
             href="#"
-            class="
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-              text-primary
-              dark:text-secondary
-            "
+            class="block px-3 py-2 text-base font-medium rounded-md  text-primary dark:text-secondary"
             >Home</nuxt-link
           >
           <nuxt-link
             to="/skills"
             href="#"
-            class="
-              mt-1
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-              text-primary
-              dark:text-secondary
-            "
+            class="block px-3 py-2 mt-1 text-base font-medium rounded-md  text-primary dark:text-secondary"
             >Skills</nuxt-link
           >
           <nuxt-link
             to="/projects"
             href="#"
-            class="
-              mt-1
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-              text-primary
-              dark:text-secondary
-            "
+            class="block px-3 py-2 mt-1 text-base font-medium rounded-md  text-primary dark:text-secondary"
             >Projects</nuxt-link
           >
           <nuxt-link
             to="/blogs"
             href="#"
-            class="
-              mt-1
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-              text-primary
-              dark:text-secondary
-            "
+            class="block px-3 py-2 mt-1 text-base font-medium rounded-md  text-primary dark:text-secondary"
             >Blog</nuxt-link
           >
           <nuxt-link
             to="/contacts"
             href="#"
-            class="
-              mt-1
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-              text-primary
-              dark:text-secondary
-            "
+            class="block px-3 py-2 mt-1 text-base font-medium rounded-md  text-primary dark:text-secondary"
             >Contact</nuxt-link
           >
         </div>
@@ -229,6 +125,11 @@ export default {
   methods: {
     toggle() {
       this.isOpen = !this.isOpen;
+    },
+  },
+  watch: {
+    $route(val) {
+      this.isOpen = false;
     },
   },
 };
