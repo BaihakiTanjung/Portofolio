@@ -3,7 +3,7 @@
     <navbar v-animate-css="{ classes: 'fadeInDown' }"></navbar>
     <Nuxt />
 
-    <div class="absolute top-0 right-0 m-5 animate-bounce">
+    <div class="absolute top-0 right-0 m-5">
       <button class="p-1 rounded" @click="changeMode">
         <img
           v-animate-css="{ classes: 'fadeInDown', delay: 1000 }"

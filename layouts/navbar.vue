@@ -101,13 +101,13 @@
             to="/blogs"
             href="#"
             class="block px-3 py-2 mt-1 text-base font-medium rounded-md  text-primary dark:text-secondary"
-            >Blog</nuxt-link
+            >Blogs</nuxt-link
           >
           <nuxt-link
             to="/contacts"
             href="#"
             class="block px-3 py-2 mt-1 text-base font-medium rounded-md  text-primary dark:text-secondary"
-            >Contact</nuxt-link
+            >Contacts</nuxt-link
           >
         </div>
         <div class="pt-4 pb-3 border-t border-gray-700"></div>

@@ -86,7 +86,7 @@
               alt=""
             />
             <h1
-              class="pt-6 text-3xl font-bold text-secondary dark:text-primary"
+              class="pt-6 text-2xl font-bold text-secondary dark:text-primary"
             >
               {{ getHome.name }}
             </h1>
@@ -94,7 +94,7 @@
               class="w-3/5 pt-3 mx-auto border-b-2 shadow-2xl opacity-25  border-white-600 dark:border-indigo-600"
             ></div>
             <p
-              class="flex items-center justify-center pt-4 text-base font-bold  text-secondary dark:text-primary"
+              class="flex items-center justify-center pt-4 text-sm font-bold  text-secondary dark:text-primary"
             >
               <svg
                 class="h-4 pr-4 fill-current text-secondary dark:text-primary"
@@ -121,7 +121,7 @@
               </svg>
               {{ getHome.address }}
             </p>
-            <p class="p-8 text-sm lg:text-lg text-secondary dark:text-primary">
+            <p class="p-6 text-sm lg:text-lg text-secondary dark:text-primary">
               {{ getHome.description }}
             </p>
           </div>
