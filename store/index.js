@@ -5,7 +5,7 @@ export const state = () => ({
     name: "Baihaki Al Biruni",
     job: "Frontend Engineer",
     office: "SIP",
-    address: "Bogor, Parung Panjang",
+    address: "Indonesia 🇲🇨",
     description:
       "Web Developer Enthusiast likes things related to technology 💻 and also loves the world of investment 💰.",
   },
