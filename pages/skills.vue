@@ -1,15 +1,15 @@
 <template>
   <section class="skills">
     <div class="container px-4 mx-auto">
-      <div class="sm:flex sm:flex-wrap sm:-mx-4 pb-6">
+      <div class="pb-6 sm:flex sm:flex-wrap sm:-mx-4">
         <div
           v-for="(skill, index) in skillsList"
           :key="skill.name"
-          class="sm:px-6 sm:w-1/2 lg:w-1/4 mt-8"
+          class="mt-8 sm:px-6 sm:w-1/2 lg:w-1/4"
         >
           <div
             v-animate-css="{ classes: 'zoomInDown', delay: 100 * index + 50 }"
-            class="card-item mx-auto max-w-sm text-center"
+            class="max-w-sm mx-auto text-center card-item"
           >
             <i
               v-if="skill.icon != ''"
@@ -20,10 +20,11 @@
             <img v-else :src="skill.url" alt="skill" srcset="" />
             <div class="px-1 py-4 text-center">
               <h5
-                class="font-semibold text-xl text-primary dark:text-secondary"
+                class="text-xl font-semibold text-primary dark:text-secondary"
               >
                 {{ skill.name }}
               </h5>
+
               <p class="text-gray-600">
                 <span class="font-bold">{{
                   `${skill.experience} ${
@@ -40,6 +41,7 @@
   </section>
 </template>
 <script>
+import { computed, useStore } from "@nuxtjs/composition-api";
 export default {
   transition: "slide-bottom",
   head() {
@@ -53,83 +55,25 @@ export default {
       ],
     };
   },
-  data() {
-    return {
-      skills: [
-        {
-          name: "Flutter",
-          icon: "devicon-flutter-plain",
-          experience: 2,
-          experienceYear: "m",
-        },
-        {
-          name: "VueJS",
-          icon: "devicon-vuejs-plain",
-          experience: 2,
-          experienceYear: "y",
-        },
-        {
-          name: "NuxtJS",
-          icon: "devicon-nuxtjs-plain",
-          experience: 1,
-          experienceYear: "y",
-        },
-        {
-          name: "Laravel",
-          icon: "devicon-laravel-plain",
-          experience: 1,
-          experienceYear: "y",
-        },
-        {
-          name: "React",
-          icon: "devicon-react-plain",
-          experience: 3,
-          experienceYear: "m",
-        },
-        {
-          name: "Typescript",
-          icon: "devicon-typescript-plain",
-          experience: 5,
-          experienceYear: "m",
-        },
-        {
-          name: "ExpressJS",
-          icon: "devicon-express-original",
-          experience: 1,
-          experienceYear: "m",
-        },
-        {
-          name: "Python",
-          icon: "devicon-python-plain",
-          experience: 2,
-          experienceYear: "m",
-        },
-        {
-          name: "Mysql",
-          icon: "devicon-mysql-plain",
-          experience: 4,
-          experienceYear: "y",
-        },
-        {
-          name: "MongoDB",
-          icon: "devicon-mongodb-plain",
-          experience: 2,
-          experienceYear: "m",
-        },
-      ],
-    };
-  },
-  computed: {
-    skillsList() {
+  setup() {
+    const store = useStore();
+
+    const skillsList = computed(() => {
       const orderExperience = ["y", "m"];
 
-      return this.skills.sort((a, b) => {
+      return store.getters["skills/getSkills"].sort((a, b) => {
         return (
           orderExperience.indexOf(a.experienceYear) -
           orderExperience.indexOf(b.experienceYear)
         );
       });
-    },
+    });
+
+    return {
+      skillsList,
+    };
+  },
+  computed: {
     title() {
       return this.$capitalizeFirstLetter(this.$route.name);
     },

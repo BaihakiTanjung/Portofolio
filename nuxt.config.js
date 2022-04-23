@@ -14,14 +14,15 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "portofolio baihaki al biruni",
+        content:
+          "Web Developer Enthusiast likes things related to technology 💻 and also loves the world of investment 💰.",
       },
     ],
     link: [
       {
         rel: "icon",
         type: "image/x-icon",
-        href: "/favicon.ico",
+        href: "/favicon/favicon.ico",
       },
       {
         rel: "stylesheet",
