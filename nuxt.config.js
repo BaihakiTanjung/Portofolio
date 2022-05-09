@@ -17,6 +17,11 @@ export default {
         content:
           "Web Developer Enthusiast likes things related to technology 💻 and also loves the world of investment 💰.",
       },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/favicon/ms-icon-150x150.png",
+      },
     ],
     link: [
       {
