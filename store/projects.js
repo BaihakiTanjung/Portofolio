@@ -5,7 +5,7 @@ export const state = () => ({
       desc: "Website content management system",
       picture: "sitama-admin-3.webp",
       url: "https://sitama-admin.com",
-      stack: ["NuxtJS", "Vuetify", "Composition API", "Vuex"],
+      stack: ["NuxtJS", "Vuetify", "Composition", "Vuex"],
     },
     {
       name: "Sitama PKP",

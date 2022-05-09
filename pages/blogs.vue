@@ -1,6 +1,10 @@
 <template>
   <section class="blogs">
-    <h1 class="text-center text-4xl text-primary dark:text-secondary">😎</h1>
+    <h1
+      class="text-center text-lg font-semibold text-primary dark:text-secondary"
+    >
+      To be continued...
+    </h1>
   </section>
 </template>
 <script>
