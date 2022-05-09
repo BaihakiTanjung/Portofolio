@@ -20,7 +20,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "/favicon/ms-icon-150x150.png",
+        content: "/photo.png",
       },
     ],
     link: [
