@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{ this.$colorMode.preference }}
     <!-- Particle -->
     <DarkParticlesComponent v-if="this.$colorMode.preference != 'light'" />
     <LightParticlesComponent v-else />
@@ -54,6 +55,10 @@ export default {
     mode() {
       return this.$colorMode.preference === "light" ? "dark" : "light";
     },
+  },
+  created() {
+    this.$colorMode.preference =
+      this.$colorMode.preference === "light" ? "dark" : "light";
   },
 };
 </script>
