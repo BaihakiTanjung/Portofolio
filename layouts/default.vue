@@ -56,9 +56,6 @@ export default {
       return this.$colorMode.preference === "light" ? "dark" : "light";
     },
   },
-  created() {
-    this.$colorMode.preference = "dark";
-  },
 };
 </script>
 <style>
