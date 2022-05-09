@@ -1,9 +1,10 @@
 <template>
   <div>
-    {{ this.$colorMode.preference }}
     <!-- Particle -->
-    <DarkParticlesComponent v-if="this.$colorMode.preference != 'light'" />
-    <LightParticlesComponent v-else />
+    <no-ssr>
+      <DarkParticlesComponent v-if="$colorMode.preference != 'light'" />
+      <LightParticlesComponent v-else />
+    </no-ssr>
     <!-- End Particle -->
 
     <div class="container mx-auto">

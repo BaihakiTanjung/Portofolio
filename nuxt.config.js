@@ -45,6 +45,8 @@ export default {
     { src: "~/plugins/vue-particles.js", ssr: false },
   ],
 
+  colorMode: "dark",
+
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
@@ -52,13 +54,13 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
+
     "@vueuse/core/nuxt",
     "@nuxtjs/composition-api/module",
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ["@nuxtjs/color-mode"],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
