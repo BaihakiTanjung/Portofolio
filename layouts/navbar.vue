@@ -8,61 +8,31 @@
               <div class="flex items-baseline ml-10">
                 <nuxt-link
                   to="/"
-                  class="
-                    navbar-item
-                    text-primary
-                    dark:text-secondary
-                    hover:bg-gray-400
-                    dark-hover:bg-blue-900
-                  "
+                  class=" navbar-item text-primary dark:text-secondary hover:bg-gray-400 dark-hover:bg-blue-900"
                   >Home
                 </nuxt-link>
                 <!-- <a href="#">Home</a> -->
                 <nuxt-link
                   to="/skills"
-                  class="
-                    navbar-item
-                    text-primary
-                    dark:text-secondary
-                    hover:bg-gray-400
-                    dark-hover:bg-blue-900
-                  "
+                  class=" navbar-item text-primary dark:text-secondary hover:bg-gray-400 dark-hover:bg-blue-900"
                   >Skills</nuxt-link
                 >
                 <nuxt-link
                   to="/projects"
                   href="#"
-                  class="
-                    navbar-item
-                    text-primary
-                    dark:text-secondary
-                    hover:bg-gray-400
-                    dark-hover:bg-blue-900
-                  "
+                  class=" navbar-item text-primary dark:text-secondary hover:bg-gray-400 dark-hover:bg-blue-900"
                   >Projects</nuxt-link
                 >
                 <nuxt-link
                   to="/blogs"
                   href="#"
-                  class="
-                    navbar-item
-                    text-primary
-                    dark:text-secondary
-                    hover:bg-gray-400
-                    dark-hover:bg-blue-900
-                  "
+                  class=" navbar-item text-primary dark:text-secondary hover:bg-gray-400 dark-hover:bg-blue-900"
                   >Blogs</nuxt-link
                 >
                 <nuxt-link
                   to="/contacts"
                   href="#"
-                  class="
-                    navbar-item
-                    text-primary
-                    dark:text-secondary
-                    hover:bg-gray-400
-                    dark-hover:bg-blue-900
-                  "
+                  class=" navbar-item text-primary dark:text-secondary hover:bg-gray-400 dark-hover:bg-blue-900"
                   >Contacts</nuxt-link
                 >
               </div>
@@ -72,18 +42,7 @@
             <!-- Mobile menu button -->
             <button
               @click="toggle"
-              class="
-                inline-flex
-                items-center
-                justify-center
-                p-2
-                rounded-md
-                transition
-                text-primary
-                dark:text-secondary
-                hover:text-white hover:bg-gray-700
-                focus:outline-none focus:bg-gray-700 focus:text-white
-              "
+              class="inline-flex items-center justify-center p-2 transition rounded-md  text-primary dark:text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
             >
               <svg
                 :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']"
@@ -117,7 +76,7 @@
       </div>
       <div
         :class="[isOpen ? 'opacity-1' : 'hidden opacity-1', 'md:hidden']"
-        class="transition-opacity ease-out-in duration-200"
+        class="transition-opacity duration-200 ease-out-in"
       >
         <div
           v-animate-css="{ classes: 'fadeInCenter', delay: 100 }"
@@ -135,7 +94,7 @@
           <nuxt-link
             to="/projects"
             href="#"
-            class="text-primary dark:text-secondary"
+            class="navbar-item-mobile text-primary dark:text-secondary"
             >Projects</nuxt-link
           >
           <nuxt-link
