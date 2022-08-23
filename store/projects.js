@@ -33,7 +33,7 @@ export const state = () => ({
       name: "Simple Realtime Bidding",
       desc: "A realtime bidding system for a company",
       picture: "realtime-bidding.webp",
-      url: "",
+      url: "https://github.com/BaihakiTanjung/vue-realtime-bid",
       stack: ["VueJs", "Laravel", "Socket.io"],
     },
     {
@@ -62,12 +62,14 @@ export const state = () => ({
       name: "Eccomerce Grosir Mobil V2",
       desc: "Car sales e-commerce website",
       picture: "eccomerce-grosir-mobil-v2.webp",
+      url: "",
       stack: ["NuxtJS", "Vuetify", "Tailwind"],
     },
     {
       name: "Eccomerce Grosir Mobil",
       desc: "Car sales e-commerce website",
       picture: "eccormece-grosirmobil.webp",
+      url: "",
       stack: ["NuxtJS", "Boostrap"],
     },
     {
@@ -88,6 +90,7 @@ export const state = () => ({
       name: "Dashboard",
       desc: "Dashboard monitoring system",
       picture: "dashboard.webp",
+
       stack: ["VueJs", "Boostrap"],
     },
     {
@@ -100,12 +103,14 @@ export const state = () => ({
       name: "Sitama Admin",
       desc: "All business data management",
       picture: "sitamaadmin.webp",
+      url: "https://sitamaadmin.grosirmobil.id/",
       stack: ["Laravel", "VueJs", "Vuesax", "Boostrap"],
     },
     {
       name: "Portofolio",
       desc: "my porto",
       picture: "portofolio.webp",
+      url: "https://baihakialbiruni.dev/",
       stack: ["NuxtJs", "Tailwind"],
     },
     {
@@ -131,6 +136,7 @@ export const state = () => ({
       name: "Monster Slayer",
       desc: "Simple game like MMORPG",
       picture: "monsterslayer.webp",
+      url: "https://monster-slayer-vue-1.netlify.app/",
       stack: ["VueJs"],
     },
     {
@@ -149,24 +155,28 @@ export const state = () => ({
       name: "Rozor Galeri",
       desc: "Eccomerce sales hot whells",
       picture: "rozorgaleri.webp",
+      url: "https://github.com/BaihakiTanjung/rozorgalerivue",
       stack: ["VueJs", "Laravel", "Boostrap"],
     },
     {
       name: "Pengaduan Santri",
       desc: "Complaints between students and teachers (Bootcamp Final Project)",
       picture: "pengaduan.webp",
+      url : "https://github.com/BaihakiTanjung/ApplicationPengaduan",
       stack: ["Laravel", "Boostrap"],
     },
     {
       name: "Telegram Bot Message",
       desc: "Send messages to Telegram with Bot",
       picture: "telegrambot.webp",
+      url : "https://github.com/BaihakiTanjung/Telegram-Bot-Message-PHP-Native-Tailwind-CSS",
       stack: ["Javascript"],
     },
     {
       name: "Bacot Generator",
       desc: "Convert text vowels to I",
       picture: "bacotgenerator.webp",
+      url : "https://github.com/BaihakiTanjung/bacot-generator",
       stack: ["Javascript"],
     },
     {
