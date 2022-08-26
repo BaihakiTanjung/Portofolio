@@ -1,11 +1,18 @@
 <template>
   <section class="projects">
+
+    <!-- Modal -->
+    <no-ssr>
+      <ProjectModal :data="data" v-show="showModal" @close-modal="showModal = false"></ProjectModal>
+    </no-ssr>
+    <!-- End Modal -->
+
     <div class="container px-4 mx-auto text-center">
       <div class="pb-6 sm:flex sm:flex-wrap sm:-mx-4">
         <div v-for="(project, index) in getProjects" :key="project.name" class="mt-8 sm:px-6 sm:w-1/2 lg:w-1/3">
 
           <div v-animate-css="{ classes: 'zoomInRight', delay: 100 * index + 50 }" class="max-w-sm mx-auto card-item">
-            <a target="_blank" :href="project.url">
+            <a @click="handleShowModal(project)">
               <div class="relative overflow-hidden cursor-pointer card-img">
                 <img :src="getPict(project.picture)" alt="card image" class="object-cover w-full h-48" />
                 <div class="card-hover"></div>
@@ -32,7 +39,7 @@
   </section>
 </template>
 <script>
-import { computed, useStore } from "@nuxtjs/composition-api";
+import { computed, useStore, ref } from "@nuxtjs/composition-api";
 export default {
   transition: "slide-bottom",
   head() {
@@ -42,6 +49,14 @@ export default {
   },
   setup() {
     const store = useStore();
+
+    const showModal = ref(false)
+    const data = ref({})
+
+    const handleShowModal = (value) => {
+      showModal.value = true
+      data.value = value
+    }
 
     const getProjects = computed(() => {
       return store.getters["projects/getProjects"];
@@ -54,6 +69,9 @@ export default {
     return {
       getProjects,
       getPict,
+      showModal,
+      handleShowModal,
+      data
     };
   },
   computed: {

@@ -4,7 +4,7 @@ export const state = () => ({
       name: "Sitama Admin 3",
       desc: "Website content management system",
       picture: "sitama-admin-3.webp",
-      url: "https://sitama-admin.com",
+      url: "https://sitamaadminbeta.grosirmobil.id",
       stack: ["NuxtJS", "Vuetify", "Composition", "Vuex"],
     },
     {
@@ -155,21 +155,21 @@ export const state = () => ({
       name: "Pengaduan Santri",
       desc: "Complaints between students and teachers (Bootcamp Final Project)",
       picture: "pengaduan.webp",
-      url : "https://github.com/BaihakiTanjung/ApplicationPengaduan",
+      url: "https://github.com/BaihakiTanjung/ApplicationPengaduan",
       stack: ["Laravel", "Boostrap"],
     },
     {
       name: "Telegram Bot Message",
       desc: "Send messages to Telegram with Bot",
       picture: "telegrambot.webp",
-      url : "https://github.com/BaihakiTanjung/Telegram-Bot-Message-PHP-Native-Tailwind-CSS",
+      url: "https://github.com/BaihakiTanjung/Telegram-Bot-Message-PHP-Native-Tailwind-CSS",
       stack: ["Javascript"],
     },
     {
       name: "Bacot Generator",
       desc: "Convert text vowels to I",
       picture: "bacotgenerator.webp",
-      url : "https://github.com/BaihakiTanjung/bacot-generator",
+      url: "https://github.com/BaihakiTanjung/bacot-generator",
       stack: ["Javascript"],
     },
     {
