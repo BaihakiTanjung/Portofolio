@@ -1,6 +1,13 @@
 export const state = () => ({
   projects: [
     {
+      name: "Kirim Paket",
+      desc: "Website tracking sales",
+      picture: "kirim-paket.webp",
+      url: "https://app.kirimpaket.id",
+      stack: ["Vue 3", "Tailwind", "Composition", "Pinia"],
+    },
+    {
       name: "Sitama Admin 3",
       desc: "Website content management system",
       picture: "sitama-admin-3.webp",
