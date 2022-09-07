@@ -1,6 +1,13 @@
 export const state = () => ({
   projects: [
     {
+      name: "Sipector",
+      desc: "A web application for inspecting and managing vehicle.",
+      picture: "sipector.webp",
+      url: "https://devotoappraisal.sitama.co.id",
+      stack: ["Nuxt", "Vuetify", "Laravel"],
+    },
+    {
       name: "Kirim Paket",
       desc: "Website tracking sales",
       picture: "kirim-paket.webp",
