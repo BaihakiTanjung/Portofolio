@@ -28,7 +28,7 @@ export default {
     const getPict = (picture) => {
       if (!picture) return;
 
-      return require(`~/assets/images/projects/` + picture);
+      return `/images/projects/` + picture;
     };
 
     return {
