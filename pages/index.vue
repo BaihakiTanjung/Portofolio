@@ -43,7 +43,7 @@
                     bg-center bg-cover
                     rounded-full
                     shadow-xl
-                  " alt="profile" loading="lazy" />
+                  " alt="profile" />
                 <h1 v-animate-css="{ classes: 'fadeInUp', delay: 100 }" class="
                     pt-6
                     text-3xl
@@ -141,7 +141,7 @@
               bg-center bg-cover
               rounded-full
               shadow-xl
-              " alt="photo" loading="lazy" />
+              " alt="photo" />
               <h1 class="pt-6 font-bold text-1xl text-secondary dark:text-primary">
                 {{ getHome.name }}
               </h1>
