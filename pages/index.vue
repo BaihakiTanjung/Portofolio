@@ -44,7 +44,15 @@
                     rounded-full
                     shadow-xl
                   " alt="profile" loading="lazy" />
-                text-secondary
+                <h1 v-animate-css="{ classes: 'fadeInUp', delay: 100 }" class="
+                    pt-6
+                    text-3xl
+                    font-bold
+                    text-secondary
+                    dark:text-primary
+                  ">
+                  {{ getHome.name }}
+                </h1>
                 <div class="
                     w-3/5
                     pt-3
