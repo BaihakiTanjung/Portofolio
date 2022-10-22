@@ -26,7 +26,6 @@
                 rounded-lg
                 shadow-2xl
                 opacity-75
-                lg:rounded-l-lg lg:rounded-r-none
                 bg-primary
                 dark:bg-secondary
                 lg:mx-0
@@ -45,15 +44,7 @@
                     rounded-full
                     shadow-xl
                   " alt="profile" loading="lazy" />
-                <h1 v-animate-css="{ classes: 'fadeInUp', delay: 100 }" class="
-                    pt-6
-                    text-3xl
-                    font-bold
-                    text-secondary
-                    dark:text-primary
-                  ">
-                  {{ getHome.name }}
-                </h1>
+                text-secondary
                 <div class="
                     w-3/5
                     pt-3
