@@ -13,13 +13,8 @@
 
       <div class="absolute top-0 right-0 m-5">
         <button class="p-1 rounded" @click="changeMode">
-          <img
-            v-animate-css="{ classes: 'fadeInDown', delay: 1000 }"
-            :src="require(`~/assets/images/${mode}-mode.svg`)"
-            width="24"
-            height="24"
-            alt=""
-          />
+          <img v-animate-css="{ classes: 'fadeInDown', delay: 1000 }" :src="`/images/${mode}-mode.svg`" width="24"
+            height="24" alt="mode" loading="lazy" />
         </button>
       </div>
     </div>
@@ -63,6 +58,7 @@ export default {
 .dark-mode {
   @apply text-secondary bg-primary;
 }
+
 .light-mode {
   @apply text-primary bg-secondary;
 }

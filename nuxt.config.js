@@ -33,8 +33,15 @@ export default {
         rel: "stylesheet",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css",
       },
+      // Optimize lfc for Google PageSpeed Insights
+      {
+        rel: "preload",
+        as: "image",
+        href: `/images/photo.webp`,
+      },
     ],
   },
+  target: "server",
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -55,18 +62,30 @@ export default {
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
+  googleFonts: {
+    families: {
+      Poppins: true,
+    },
+  },
+
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-
     "@vueuse/core/nuxt",
     "@nuxtjs/composition-api/module",
+    "@nuxtjs/google-fonts",
   ],
+
+  router: {
+    prefetchLinks: false,
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ["@nuxtjs/color-mode"],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    analyze: true,
+  },
 };

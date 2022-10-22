@@ -2,34 +2,21 @@
   <section class="skills">
     <div class="container px-4 mx-auto">
       <div class="pb-6 sm:flex sm:flex-wrap sm:-mx-4">
-        <div
-          v-for="(skill, index) in skillsList"
-          :key="skill.name"
-          class="mt-8 sm:px-6 sm:w-1/2 lg:w-1/4"
-        >
-          <div
-            v-animate-css="{ classes: 'zoomInDown', delay: 100 * index + 50 }"
-            class="max-w-sm mx-auto text-center card-item"
-          >
-            <i
-              v-if="skill.icon != ''"
-              class="colored"
-              :class="skill.icon"
-              style="font-size: 10rem"
-            ></i>
-            <img v-else :src="skill.url" alt="skill" srcset="" />
+        <div v-for="(skill, index) in skillsList" :key="skill.name" class="mt-8 sm:px-6 sm:w-1/2 lg:w-1/4">
+          <div v-animate-css="{ classes: 'zoomInDown', delay: 100 * index + 50 }"
+            class="max-w-sm mx-auto text-center card-item">
+            <i v-if="skill.icon != ''" class="colored" :class="skill.icon" style="font-size: 10rem"></i>
+            <img v-else :src="skill.url" :alt="skill.name" loading="lazy" />
             <div class="px-1 py-4 text-center">
-              <h5
-                class="text-xl font-semibold text-primary dark:text-secondary"
-              >
+              <h5 class="text-xl font-semibold text-primary dark:text-secondary">
                 {{ skill.name }}
               </h5>
 
               <p class="text-gray-600">
                 <span class="font-bold">{{
-                  `${skill.experience} ${
-                    skill.experienceYear == "m" ? "Months" : "Years"
-                  }`
+                `${skill.experience} ${
+                skill.experienceYear == "m" ? "Months" : "Years"
+                }`
                 }}</span>
                 of experience
               </p>
