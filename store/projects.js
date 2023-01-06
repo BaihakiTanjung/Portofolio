@@ -1,6 +1,13 @@
 export const state = () => ({
   projects: [
     {
+      name: "BFI Treasury",
+      desc: "A web finance management system.",
+      picture: "bfi-treasury.webp",
+      url: "",
+      stack: ["Boostrap", "ReactJS", "Redux", "Hooks"],
+    },
+    {
       name: "Sipector",
       desc: "A web application for inspecting and managing vehicle.",
       picture: "sipector.webp",
