@@ -1,6 +1,27 @@
 export const state = () => ({
   projects: [
     {
+      name: "TimeZy",
+      desc: "A web simple absensi system",
+      picture: "timezy.webp",
+      url: "https://github.com/BaihakiTanjung/timezy-mobile",
+      stack: ["Tailwind", "Ionic", "Vue", "Typescript", "Laravel"],
+    },
+    {
+      name: "Pokenext",
+      desc: "A web simple pokemon list",
+      picture: "pokenext.webp",
+      url: "https://poke-next.netlify.app/",
+      stack: ["Tailwind", "NextJS", "Hooks", "Typescript"],
+    },
+    {
+      name: "Tukubuku",
+      desc: "A web simple book list",
+      picture: "tukubuku.webp",
+      url: "https://tukubuku.netlify.app/",
+      stack: ["Tailwind", "DaisyUI", "VueJS"],
+    },
+    {
       name: "BFI Treasury",
       desc: "A web finance management system.",
       picture: "bfi-treasury.webp",

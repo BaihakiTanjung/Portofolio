@@ -14,9 +14,8 @@
 
               <p class="text-gray-600">
                 <span class="font-bold">{{
-                `${skill.experience} ${
-                skill.experienceYear == "m" ? "Months" : "Years"
-                }`
+                `${skill.experience} ${skill.experienceYear == "m" ? "Months" : "Years"
+                  }`
                 }}</span>
                 of experience
               </p>
@@ -46,14 +45,7 @@ export default {
     const store = useStore();
 
     const skillsList = computed(() => {
-      const orderExperience = ["y", "m"];
-
-      return store.getters["skills/getSkills"].sort((a, b) => {
-        return (
-          orderExperience.indexOf(a.experienceYear) -
-          orderExperience.indexOf(b.experienceYear)
-        );
-      });
+      return store.getters["skills/getSkills"]
     });
 
     return {

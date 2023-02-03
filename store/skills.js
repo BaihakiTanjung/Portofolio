@@ -1,17 +1,12 @@
 export const state = () => ({
   skills: [
     {
-      name: "Flutter",
-      icon: "devicon-flutter-plain",
-      experience: 2,
-      experienceYear: "m",
-    },
-    {
       name: "VueJS",
       icon: "devicon-vuejs-plain",
       experience: 3,
       experienceYear: "y",
     },
+
     {
       name: "NuxtJS",
       icon: "devicon-nuxtjs-plain",
@@ -31,10 +26,16 @@ export const state = () => ({
       experienceYear: "m",
     },
     {
-      name: "React",
-      icon: "devicon-react-plain",
+      name: "NextJS",
+      icon: "devicon-nextjs-original",
       experience: 6,
       experienceYear: "m",
+    },
+    {
+      name: "React",
+      icon: "devicon-react-plain",
+      experience: 1,
+      experienceYear: "y",
     },
     {
       name: "Angular",
@@ -51,7 +52,7 @@ export const state = () => ({
     {
       name: "ExpressJS",
       icon: "devicon-express-original",
-      experience: 3,
+      experience: 6,
       experienceYear: "m",
     },
     {
@@ -63,6 +64,12 @@ export const state = () => ({
     {
       name: "MongoDB",
       icon: "devicon-mongodb-plain",
+      experience: 2,
+      experienceYear: "m",
+    },
+    {
+      name: "Flutter",
+      icon: "devicon-flutter-plain",
       experience: 2,
       experienceYear: "m",
     },
