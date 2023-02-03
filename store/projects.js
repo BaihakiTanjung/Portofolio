@@ -22,6 +22,13 @@ export const state = () => ({
       stack: ["Tailwind", "DaisyUI", "VueJS"],
     },
     {
+      name: "Back Office Vonix",
+      desc: "Back Office Content Management System Vonix.",
+      picture: "back-office-vonix.webp",
+      url: "",
+      stack: ["Nebular", "AngularJS"],
+    },
+    {
       name: "BFI Treasury",
       desc: "A web finance management system.",
       picture: "bfi-treasury.webp",
