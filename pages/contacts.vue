@@ -5,10 +5,10 @@
         <!--Main Col-->
         <div
           id="profile"
-          class="w-full mx-6 rounded-lg  lg:w-12/12 lg:rounded-l-lg lg:rounded-r-none lg:mx-0"
+          class="w-full mx-6 rounded-lg lg:w-12/12 lg:rounded-l-lg lg:rounded-r-none lg:mx-0"
         >
           <div
-            class="flex flex-wrap items-center justify-between w-4/5 pb-16 mx-auto mt-6  lg:pb-0 lg:w-full"
+            class="flex flex-wrap items-center justify-between w-4/5 pb-16 mx-auto mt-6 lg:pb-0 lg:w-full"
           >
             <a
               target="_blank"
