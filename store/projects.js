@@ -4,7 +4,7 @@ export const state = () => ({
       name: "Sinar Mutiara Penjualan",
       desc: "A web application for sinar mutiara company, my role is as a Frontend Developer",
       picture: "sinar-mutira-penjualan.webp",
-      url: "https://play.google.com/store/apps/details?id=com.pgi.gaol&hl=en_US&pli=1",
+      url: "https://sm-penjualan-dev.pgindonesia.com/",
       stack: ["Vue 2", "Laravel", "Boostrap"],
     },
     {
