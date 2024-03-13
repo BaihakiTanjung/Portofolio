@@ -1,8 +1,8 @@
 <template>
   <transition name="modal-fade">
-    <div class="p-5 modal-overlay" @click="$emit('close-modal')">
+    <div class="modal-overlay" @click="$emit('close-modal')">
       <div class="modal-wrapper">
-        <div class="modal" @click.stop>
+        <div class="p-5 modal" @click.stop>
           <slot></slot>
         </div>
 
