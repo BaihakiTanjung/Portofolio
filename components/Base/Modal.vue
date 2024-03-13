@@ -2,7 +2,7 @@
   <transition name="modal-fade">
     <div class="modal-overlay" @click="$emit('close-modal')">
       <div class="modal-wrapper">
-        <div class="p-5 modal" @click.stop>
+        <div class="modal" @click.stop>
           <slot></slot>
         </div>
 
@@ -29,7 +29,6 @@
 .modal {
   color: #1d2d50;
   background-color: white;
-  height: 500px;
   width: 500px;
   margin-top: 10%;
   padding: 5rem;
@@ -38,7 +37,6 @@
 
 @media only screen and (max-width: 768px) {
   .modal {
-    height: 400px;
     width: 350px;
     padding: 3rem;
   }

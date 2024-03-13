@@ -10,7 +10,7 @@
     <div class="me-3">
       <a class="font-bold text-blue-400" :href="data.url" target="_blank" rel="noopener noreferrer">Demo</a>
     </div>
-    <div class="mb-12">
+    <div>
       <p>{{ data.desc }}</p>
     </div>
   </BaseModal>
