@@ -17,7 +17,7 @@ export const state = () => ({
     {
       name: "Pugindo",
       desc: "A web application for pusat gadai indonesia company, my role is as a Frontend Developer",
-      picture: "pugindo",
+      picture: "pugindo.webp",
       url: "https://pugindo.dev2-staging.pgindonesia.com/",
       stack: ["Boostrap", "Vue 2", "Java Spring"],
     },

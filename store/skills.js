@@ -3,14 +3,14 @@ export const state = () => ({
     {
       name: "VueJS",
       icon: "devicon-vuejs-plain",
-      experience: 3,
+      experience: 4,
       experienceYear: "y",
     },
 
     {
       name: "NuxtJS",
       icon: "devicon-nuxtjs-plain",
-      experience: 2.5,
+      experience: 3.5,
       experienceYear: "y",
     },
     {
@@ -34,7 +34,7 @@ export const state = () => ({
     {
       name: "React",
       icon: "devicon-react-plain",
-      experience: 1,
+      experience: 1.5,
       experienceYear: "y",
     },
     {
