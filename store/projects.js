@@ -10,7 +10,7 @@ export const state = () => ({
     {
       name: "Pusat Gadai Mobile",
       desc: "A mobile application for pusat gadai indonesia company, my role is as a Backend Developer",
-      picture: "mahawira.webp",
+      picture: "pusat-gadai-mobile.webp",
       url: "https://play.google.com/store/apps/details?id=com.pgi.gaol&hl=en_US&pli=1",
       stack: ["Flutter", "Java Kotlin Spring Boot"],
     },
