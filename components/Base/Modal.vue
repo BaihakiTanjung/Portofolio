@@ -1,13 +1,13 @@
 <template>
   <transition name="modal-fade">
-    <div class="modal-overlay" @click="$emit('close-modal')">
+    <div class="p-5 modal-overlay" @click="$emit('close-modal')">
       <div class="modal-wrapper">
         <div class="modal" @click.stop>
           <slot></slot>
         </div>
 
         <div class="close" @click="$emit('close-modal')">
-          <button class="close-img transition duration-300 delay-150 hover:delay-0 bg-gray-400 font-bold">X</button>
+          <button class="font-bold transition duration-300 delay-150 bg-gray-400 close-img hover:delay-0">X</button>
         </div>
       </div>
     </div>
