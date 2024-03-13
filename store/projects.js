@@ -1,6 +1,48 @@
 export const state = () => ({
   projects: [
     {
+      name: "Sinar Mutiara Penjualan",
+      desc: "A web application for sinar mutiara company, my role is as a Frontend Developer",
+      picture: "sinar-mutira-penjualan.webp",
+      url: "https://play.google.com/store/apps/details?id=com.pgi.gaol&hl=en_US&pli=1",
+      stack: ["Vue 2", "Laravel", "Boostrap"],
+    },
+    {
+      name: "Pusat Gadai Mobile",
+      desc: "A mobile application for pusat gadai indonesia company, my role is as a Backend Developer",
+      picture: "mahawira.webp",
+      url: "https://play.google.com/store/apps/details?id=com.pgi.gaol&hl=en_US&pli=1",
+      stack: ["Flutter", "Java Kotlin Spring Boot"],
+    },
+    {
+      name: "Pugindo",
+      desc: "A web application for pusat gadai indonesia company, my role is as a Frontend Developer",
+      picture: "pugindo",
+      url: "https://pugindo.dev2-staging.pgindonesia.com/",
+      stack: ["Boostrap", "Vue 2", "Java Spring"],
+    },
+    {
+      name: "Mahawira",
+      desc: "A web application for portal applying for mesin EDC",
+      picture: "mahawira.webp",
+      url: "https://dev.mahawira.id/",
+      stack: ["Tailwind", "Vue 3", "Laravel"],
+    },
+    {
+      name: "CMS First Physio",
+      desc: "CMS for physiotherapy",
+      picture: "first-physio-cms.webp",
+      url: "https://cms.firstphysio.id/",
+      stack: ["Tailwind", "Pinia", "Vue 3", "Laravel"],
+    },
+    {
+      name: "Landing First Physio",
+      desc: "Landing page for physiotherapy",
+      picture: "landing-first-physio.webp",
+      url: "https://firstphysio.id/",
+      stack: ["Tailwind", "NuxtJS", "Laravel"],
+    },
+    {
       name: "TimeZy",
       desc: "A web simple absensi system",
       picture: "timezy.webp",
