@@ -14,7 +14,7 @@
           <div v-animate-css="{ classes: 'zoomInRight', delay: 100 * index + 50 }" class="max-w-sm mx-auto card-item">
             <a @click="handleShowModal(project)">
               <div class="relative overflow-hidden cursor-pointer card-img">
-                <img :src="getPict(project.picture)" :alt="project.name" loading="lazy"
+                <nuxt-img :src="getPict(project.picture)" :alt="project.name" loading="lazy"
                   class="object-cover w-full h-48" />
                 <div class="card-hover"></div>
               </div>
@@ -30,8 +30,8 @@
             <div class="px-2 pt-1 pb-2">
               <span v-for="stack in project.stack" :key="stack"
                 class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-bold rounded-lg opacity-75 bg-primary dark:bg-secondary text-secondary dark:text-primary">{{
-                stack
-                }}</span>
+        stack
+      }}</span>
             </div>
           </div>
         </div>
