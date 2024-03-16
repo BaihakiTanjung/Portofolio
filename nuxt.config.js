@@ -40,6 +40,9 @@ export default {
         href: `/images/photo.webp`,
       },
     ],
+    htmlAttrs: {
+      lang: "en",
+    },
   },
   target: "server",
 
