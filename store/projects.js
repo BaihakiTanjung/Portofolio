@@ -60,7 +60,7 @@ export const state = () => ({
       name: "Tukubuku",
       desc: "A web simple book list",
       picture: "tukubuku.webp",
-      url: "https://tukubuku.netlify.app/",
+      url: "https://github.com/BaihakiTanjung/tuku-buku-apps",
       stack: ["Tailwind", "DaisyUI", "VueJS"],
     },
     {
