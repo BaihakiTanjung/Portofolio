@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/image": "^0.7.0",
     "@nuxtjs/composition-api": "^0.31.0",
     "@vueuse/core": "^7.1.2",
     "core-js": "^3.19.2",

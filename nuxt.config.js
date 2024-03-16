@@ -69,12 +69,16 @@ export default {
   },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+
+  target: "static",
+
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     "@vueuse/core/nuxt",
     "@nuxtjs/composition-api/module",
     "@nuxtjs/google-fonts",
+    "@nuxt/image",
   ],
 
   router: {
