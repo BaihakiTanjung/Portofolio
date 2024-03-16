@@ -9,7 +9,8 @@
               class="w-full mx-6 rounded-lg shadow-2xl opacity-75 bg-primary dark:bg-secondary lg:mx-0 child-parallax">
               <div class="p-4 text-center md:p-12 child-html">
                 <!-- Image for view-->
-                <nuxt-img loading="lazy" v-animate-css="{ classes: 'fadeInDown', delay: 200 }" src="/images/photo.webp"
+                <nuxt-img width="300" height="300" loading="lazy" v-animate-css="{ classes: 'fadeInDown', delay: 200 }"
+                  src="/images/photo.webp"
                   class="block object-cover object-left w-48 h-48 mx-auto -mt-32 bg-center bg-cover rounded-full shadow-xl "
                   alt="profile" />
                 <h1 v-animate-css="{ classes: 'fadeInUp', delay: 100 }"
